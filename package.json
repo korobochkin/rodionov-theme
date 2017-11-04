@@ -11,6 +11,14 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0"
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browserify": "^5.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-exorcise": "^2.1.1",
+    "load-grunt-tasks": "^3.5.2"
   }
 }
