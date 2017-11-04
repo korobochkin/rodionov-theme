@@ -9,6 +9,7 @@
   "author": "Kolya Korobochkin",
   "license": "GPL-2.0",
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0"
   }
