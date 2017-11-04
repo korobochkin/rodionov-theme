@@ -2,7 +2,6 @@
 namespace Korobochkin\RodionovTheme;
 
 use Korobochkin\WPKit\Themes\AbstractTheme;
-use Korobochkin\WPKit\Themes\ThemeInterface;
 
 class Theme extends AbstractTheme
 {
