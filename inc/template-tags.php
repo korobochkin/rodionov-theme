@@ -155,7 +155,7 @@ function rodionov_theme_post_meta() {
     if (is_single()) {
         edit_post_link(
             sprintf(
-                esc_html__( 'Edit', 'setka-blog-theme' ),
+                esc_html__( 'Edit', 'rodionov-theme' ),
                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
             )
         );

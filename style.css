@@ -6437,8 +6437,8 @@ a.text-dark:focus, a.text-dark:hover {
 .site-footer-under-title a {
   text-decoration: underline; }
 
-body.blog .post {
-  margin-top: 55px; }
+body.blog .post, body.single .post {
+  margin: 55px 0; }
 
 .text-mono a {
   color: #212529; }
@@ -6472,7 +6472,8 @@ a:hover {
   line-height: 20px;
   font-family: "PT Serif", serif;
   font-style: italic;
-  color: #adb5bd; }
+  color: #adb5bd;
+  margin-right: 19px; }
 
 .entry-title {
   font-size: 36px;
