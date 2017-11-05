@@ -9,7 +9,13 @@
 }
 
 .text-gray {
-  color: gray;
+  a {
+    color: #b3b3b3;
+
+    @include hover {
+      color: #fff;
+    }
+  }
 }
 
 .text-footer {

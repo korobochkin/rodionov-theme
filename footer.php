@@ -13,14 +13,14 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer text-gray">
+	<footer id="colophon" class="site-footer">
         <div class="container site-footer-components ">
 
-            <div class="row text-footer">
-                <div class="site-info col-sm-3">
-                    <p class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                </div><!-- .site-info -->
-                <nav id="site-navigation" class="main-navigation col-auto">
+            <div class="row align-items-sm-baseline">
+                <div class="site-footer-header col-sm-3 text-gray links-no-decoration">
+                    <p class="site-footer-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                </div>
+                <nav class="site-footer-menu col-auto text-gray links-no-decoration">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2',
@@ -31,7 +31,7 @@
                     ) );
                     ?>
                 </nav><!-- #site-navigation -->
-                <nav class="site-header-social col-auto ml-auto">
+                <nav class="site-footer-social col-auto ml-auto text-gray links-no-decoration">
                     social
                     <?php
                     wp_nav_menu( array(
@@ -45,13 +45,20 @@
             </div>
             <div class="site-footer-dash"></div>
             <div class="row text-footer">
-                <div class="col-sm-4">
-                    1
+                <div class="col-sm-3 text-gray">
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-2-under-title',
+                        'menu_class'     => 'm-0 list-unstyled',
+                        'fallback_cb'    => false,
+                        'depth'          => 1,
+                    ) );
+                    ?>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 text-gray">
                     2
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 text-gray">
                     3
                 </div>
             </div>

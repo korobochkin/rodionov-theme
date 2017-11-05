@@ -6391,7 +6391,8 @@ a.text-dark:focus, a.text-dark:hover {
 
 .site-title {
   font-size: 24px;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 700; }
   .site-title .text-accent {
     font-weight: normal; }
 
@@ -6404,23 +6405,38 @@ a.text-dark:focus, a.text-dark:hover {
 .site-footer {
   background-color: #000; }
 
+.site-footer-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700; }
+  .site-footer-title .text-accent {
+    font-weight: normal; }
+
 .site-footer-components {
-  min-height: 5em;
-  padding-top: 44px;
+  padding-top: 60px;
   padding-bottom: 60px; }
 
+.site-footer-menu .menu-item {
+  padding: 0 30px 0 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1; }
+
 .site-footer-dash {
-  height: 4px;
+  height: 2px;
   overflow: hidden;
-  background-color: #313131; }
+  background-color: #313131;
+  margin: 36px 0; }
 
 .text-mono a {
   color: #000; }
   .text-mono a:hover {
     color: #A05D36; }
 
-.text-gray {
-  color: gray; }
+.text-gray a {
+  color: #b3b3b3; }
+  .text-gray a:hover {
+    color: #fff; }
 
 .text-footer,
 .text-footer a,
