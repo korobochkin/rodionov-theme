@@ -6437,7 +6437,18 @@ a.text-dark:focus, a.text-dark:hover {
 .site-footer-under-title a {
   text-decoration: underline; }
 
-body.blog .post, body.single .post {
+.page-header {
+  margin: 55px 0 100px 0; }
+
+body.blog .post, body.single .post, body.archive .post,
+.post body.page, body.blog
+.page, body.single
+.page, body.archive
+.page,
+.page body.page {
+  margin: 55px 0; }
+
+.page-content {
   margin: 55px 0; }
 
 .text-mono a {

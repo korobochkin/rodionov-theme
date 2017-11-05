@@ -1,6 +1,18 @@
-.post {
+
+.page-header {
+  margin: 55px 0 100px 0;
+}
+
+.post,
+.page {
   body.blog &,
-  body.single & {
+  body.single &,
+  body.archive &,
+  body.page {
     margin: 55px 0;
   }
+}
+
+.page-content {
+  margin: 55px 0;
 }
