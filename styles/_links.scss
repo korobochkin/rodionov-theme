@@ -1,3 +1,9 @@
+a {
+  @include hover {
+    cursor: pointer !important;
+  }
+}
+
 .links-no-decoration {
   a {
     &, &:hover, &:focus {

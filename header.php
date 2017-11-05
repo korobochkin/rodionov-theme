@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
         <div class="container">
-            <div class="row align-items-center site-header-components">
+            <div class="row align-items-sm-baseline site-header-components">
                 <div class="site-branding col-sm-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
