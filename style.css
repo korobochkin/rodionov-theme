@@ -6462,9 +6462,29 @@ body.blog .post, body.single .post, body.archive .post,
     font-size: 18px;
     line-height: 1;
     font-weight: 700;
-    padding: 6px;
+    padding: 16px 32px;
     margin: 0 auto;
-    display: block; }
+    display: block;
+    cursor: pointer; }
+
+.infinite-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .infinite-wrap {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .infinite-wrap {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .infinite-wrap {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .infinite-wrap {
+      max-width: 1140px; } }
 
 .text-mono a {
   color: #212529; }

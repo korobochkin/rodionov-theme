@@ -30,8 +30,15 @@
     line-height: 1;
     font-weight: 700;
 
-    padding: 6px;
+    padding: 16px 32px;
     margin: 0 auto;
     display: block;
+
+    cursor: pointer;
   }
+}
+
+.infinite-wrap {
+  @include make-container();
+  @include make-container-max-widths();
 }
