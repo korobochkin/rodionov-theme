@@ -100,3 +100,64 @@ if ( ! function_exists( 'rodionov_theme_entry_footer' ) ) :
 		);
 	}
 endif;
+
+/**
+ * Returns true if a blog has more than 1 category.
+ *
+ * @return bool
+ */
+function rodionov_theme_categorized_blog() {
+    if ( false === ( $all_the_cool_cats = get_transient( 'rodionov_theme_categories' ) ) ) {
+        // Create an array of all the categories that are attached to posts.
+        $all_the_cool_cats = get_categories( array(
+            'fields'     => 'ids',
+            'hide_empty' => 1,
+            // We only need to know if there is more than one category.
+            'number'     => 2,
+        ) );
+
+        // Count the number of categories that are attached to the posts.
+        $all_the_cool_cats = count( $all_the_cool_cats );
+
+        set_transient( 'rodionov_theme_categories', $all_the_cool_cats );
+    }
+
+    if ( $all_the_cool_cats > 1 ) {
+        // This blog has more than 1 category so setka_blog_theme_categorized_blog should return true.
+        return true;
+    } else {
+        // This blog has only 1 category so setka_blog_theme_categorized_blog should return false.
+        return false;
+    }
+}
+
+function rodionov_theme_post_meta() {
+    // Hide category and tag text for pages.
+    if ( 'post' === get_post_type() ) {
+        /* translators: used between list items, there is a space after the comma */
+        $categories_list = get_the_category_list( esc_html__( ', ', 'rodionov-theme' ) );
+        if ( $categories_list && rodionov_theme_categorized_blog() ) {
+            printf( '<span class="entry-categories">' . $categories_list . '</span>', $categories_list ); // WPCS: XSS OK.
+        }
+    }
+
+    $time_string = '<time class="published" datetime="%1$s">%2$s</time>';
+
+    $time_string = sprintf( $time_string,
+        esc_attr( get_the_date( 'c' ) ),
+        esc_html( get_the_date() ),
+        esc_attr( get_the_modified_date( 'c' ) ),
+        esc_html( get_the_modified_date() )
+    );
+
+    echo '<span class="entry-date">' . $time_string . '</span>'; // WPCS: XSS OK.
+
+    if (is_single()) {
+        edit_post_link(
+            sprintf(
+                esc_html__( 'Edit', 'setka-blog-theme' ),
+                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+            )
+        );
+    }
+}

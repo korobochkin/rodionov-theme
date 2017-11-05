@@ -1,6 +1,6 @@
 .text-mono {
   a {
-    color: #000;
+    color: $body-color;
 
     @include hover {
       color: $link-color;

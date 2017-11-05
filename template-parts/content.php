@@ -11,17 +11,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+        <?php if ( 'post' === get_post_type() ) : ?>
+            <div class="entry-meta text-mono links-no-decoration"><?php rodionov_theme_post_meta(); ?></div>
+        <?php endif; ?>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title text-mono links-no-decoration"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php rodionov_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<!--<div class="entry-meta">
+			<?php /*rodionov_theme_posted_on(); */?>
+		</div>--><!-- .entry-meta -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->

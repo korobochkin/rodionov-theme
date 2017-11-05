@@ -1,0 +1,34 @@
+.entry-meta {
+
+  .entry-categories {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-right: 19px;
+  }
+
+  .entry-date {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $font-family-accent;
+    font-style: italic;
+
+    color: $gray-500;
+  }
+}
+
+.entry-title {
+  font-size: 36px;
+  line-height: 48px;
+  margin: .05em 0 .5em 0;
+}
+
+.entry-excerpt {
+  font-size: 24px;
+  line-height: 31px;
+  font-family: $font-family-accent;
+
+  color: $gray-500;
+}

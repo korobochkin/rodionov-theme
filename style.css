@@ -6434,8 +6434,14 @@ a.text-dark:focus, a.text-dark:hover {
   font-size: 14px;
   line-height: 19px; }
 
+.site-footer-under-title a {
+  text-decoration: underline; }
+
+body.blog .post {
+  margin-top: 55px; }
+
 .text-mono a {
-  color: #000; }
+  color: #212529; }
   .text-mono a:hover {
     color: #A05D36; }
 
@@ -6454,5 +6460,29 @@ a:hover {
 
 .links-no-decoration a, .links-no-decoration a:hover, .links-no-decoration a:focus {
   text-decoration: none; }
+
+.entry-meta .entry-categories {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 19px; }
+.entry-meta .entry-date {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  color: #adb5bd; }
+
+.entry-title {
+  font-size: 36px;
+  line-height: 48px;
+  margin: .05em 0 .5em 0; }
+
+.entry-excerpt {
+  font-size: 24px;
+  line-height: 31px;
+  font-family: "PT Serif", serif;
+  color: #adb5bd; }
 
 /*# sourceMappingURL=style.css.map */
