@@ -24,7 +24,6 @@
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2',
-                        'menu_id'        => 'footer-primary-menu',
                         'menu_class'     => 'row m-0 list-unstyled',
                         'fallback_cb'    => false,
                         'depth'          => 1,
@@ -43,9 +42,11 @@
                     ?>
                 </nav>
             </div>
+
             <div class="site-footer-dash"></div>
-            <div class="row text-footer">
-                <div class="col-sm-3 text-gray">
+
+            <div class="row">
+                <div class="site-footer-under-title col-sm-3 text-gray">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2-under-title',
@@ -55,13 +56,14 @@
                     ) );
                     ?>
                 </div>
-                <div class="col-sm-6 text-gray">
+                <div class="site-footer-about col-sm-6 text-gray">
                     2
                 </div>
-                <div class="col-sm-2 text-gray">
-                    3
+                <div class="site-footer-powered col-sm-2 text-gray">
+                    Сайт работает на Setka Editor
                 </div>
             </div>
+
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

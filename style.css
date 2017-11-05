@@ -6428,22 +6428,23 @@ a.text-dark:focus, a.text-dark:hover {
   background-color: #313131;
   margin: 36px 0; }
 
+.site-footer-under-title,
+.site-footer-about,
+.site-footer-powered {
+  font-size: 14px;
+  line-height: 19px; }
+
 .text-mono a {
   color: #000; }
   .text-mono a:hover {
     color: #A05D36; }
 
-.text-gray a {
+.text-gray {
   color: #b3b3b3; }
-  .text-gray a:hover {
-    color: #fff; }
-
-.text-footer,
-.text-footer a,
-.text-footer a:visited,
-.text-footer a:hover,
-.text-footer a:focus {
-  color: #fff; }
+  .text-gray a {
+    color: #b3b3b3; }
+    .text-gray a:hover {
+      color: #fff; }
 
 .text-accent {
   font-family: "PT Serif", serif; }

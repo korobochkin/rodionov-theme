@@ -33,3 +33,16 @@
   background-color: #313131;
   margin: 36px 0;
 }
+
+.site-footer-under-title,
+.site-footer-about,
+.site-footer-powered {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.site-footer-under-title {
+  a {
+    text-decoration: underline;
+  }
+}
