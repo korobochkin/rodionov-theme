@@ -6346,4 +6346,59 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+  .screen-reader-text:focus {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #212529;
+    display: block;
+    font-size: .875;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+.site-header {
+  background-color: #f2f2f2; }
+
+.site-branding {
+  margin: 2em 0; }
+
+.site-title {
+  font-size: 20px;
+  line-height: 1; }
+
+#primary-menu .menu-item {
+  padding: 0 24px 0 0; }
+
+.links-mono a {
+  color: #060606; }
+  .links-mono a, .links-mono a:hover, .links-mono a:focus {
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
