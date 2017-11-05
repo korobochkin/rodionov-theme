@@ -18,6 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i|Roboto:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,14 +27,14 @@
 
 	<header id="masthead" class="site-header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="site-branding col-auto links-mono">
+            <div class="row align-items-center site-header-components">
+                <div class="site-branding col-sm-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        <h1 class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></h1>
                     <?php else : ?>
-                        <p class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                        <p class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></p>
                     <?php
                     endif;
 
@@ -44,7 +45,7 @@
                     endif; ?>
                 </div><!-- .site-branding -->
 
-                <nav id="site-navigation" class="main-navigation col-auto links-mono">
+                <nav id="site-navigation" class="main-navigation col-auto text-mono links-no-decoration">
                     <button class="menu-toggle d-none" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rodionov-theme' ); ?></button>
                     <?php
                         wp_nav_menu( array(
@@ -56,6 +57,18 @@
                         ) );
                     ?>
                 </nav><!-- #site-navigation -->
+
+                <nav class="site-header-social col-auto ml-auto">
+                    social
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1-social',
+                        'menu_class'     => 'row m-0 list-unstyled',
+                        'fallback_cb'    => false,
+                        'depth'          => 1,
+                    ) );
+                    ?>
+                </nav>
             </div>
         </div>
 	</header><!-- #masthead -->

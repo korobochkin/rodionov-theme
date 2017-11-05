@@ -1,0 +1,27 @@
+.text-mono {
+  a {
+    color: #000;
+
+    @include hover {
+      color: $link-color;
+    }
+  }
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-footer {
+  &,
+  a,
+  a:visited,
+  a:hover,
+  a:focus {
+    color: #fff;
+  }
+}
+
+.text-accent {
+  font-family: $font-family-accent;
+}

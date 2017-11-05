@@ -2,18 +2,29 @@
   background-color: #f2f2f2;
 }
 
+.site-header-components {
+  min-height: 5em;
+}
+
 .site-branding {
-  margin: 2em 0;
+
 }
 
 .site-title {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
+
+  .text-accent {
+    font-weight: normal;
+  }
 }
 
 #primary-menu {
 
   .menu-item {
     padding: 0 24px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
   }
 }

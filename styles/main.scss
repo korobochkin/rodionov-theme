@@ -64,5 +64,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "../node_modules/bootstrap/scss/utilities";
 
 @import "../sass/modules/accessibility";
-@import "components/site-header";;
+@import "components/site-header";
+@import "components/site-footer";
+@import "type";
 @import "links";

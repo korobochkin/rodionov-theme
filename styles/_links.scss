@@ -1,7 +1,5 @@
-.links-mono {
+.links-no-decoration {
   a {
-    color: #060606;
-
     &, &:hover, &:focus {
       text-decoration: none;
     }

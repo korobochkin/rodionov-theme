@@ -45,6 +45,9 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'rodionov-theme' ),
+            'menu-2' => esc_html__( 'Footer Primary', 'rodionov-theme' ),
+            'menu-1-social' => esc_html__( 'Primary Social', 'rodionov-theme' ),
+            'menu-2-social' => esc_html__( 'Footer Primary Social', 'rodionov-theme' ),
 		) );
 
 		/*
