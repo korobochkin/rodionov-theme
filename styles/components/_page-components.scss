@@ -42,3 +42,10 @@
   @include make-container();
   @include make-container-max-widths();
 }
+
+.infinite-loader {
+  .spinner {
+    margin: 0 auto;
+    height: 34px;
+  }
+}

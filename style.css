@@ -6486,6 +6486,10 @@ body.blog .post, body.single .post, body.archive .post,
     .infinite-wrap {
       max-width: 1140px; } }
 
+.infinite-loader .spinner {
+  margin: 0 auto;
+  height: 34px; }
+
 .text-mono a {
   color: #212529; }
   .text-mono a:hover {
