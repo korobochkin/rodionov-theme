@@ -8,7 +8,7 @@
   }
 }
 
-.site-branding {
+#site-header-branding {
   order: 10;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 
-.main-navigation {
+#site-navigation {
   order: 20;
 
   @include media-breakpoint-down(md) {
@@ -50,7 +50,7 @@
   }
 }
 
-.site-header-social {
+#site-header-social {
   order: 15;
 
   @include media-breakpoint-up(lg) {

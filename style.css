@@ -6124,7 +6124,7 @@ a.text-dark:focus, a.text-dark:hover {
   .site-header-components {
     padding: 50px 0 54px 0; } }
 
-.site-branding {
+#site-header-branding {
   order: 10; }
 
 .site-title {
@@ -6139,10 +6139,10 @@ a.text-dark:focus, a.text-dark:hover {
   .site-title .text-accent {
     font-weight: normal; }
 
-.main-navigation {
+#site-navigation {
   order: 20; }
   @media (max-width: 991px) {
-    .main-navigation {
+    #site-navigation {
       background: #fff;
       padding-top: 21px;
       font-size: 18px; } }
@@ -6153,10 +6153,10 @@ a.text-dark:focus, a.text-dark:hover {
   font-weight: 700;
   line-height: 1; }
 
-.site-header-social {
+#site-header-social {
   order: 15; }
   @media (min-width: 992px) {
-    .site-header-social {
+    #site-header-social {
       order: 30; } }
 
 .site-footer {

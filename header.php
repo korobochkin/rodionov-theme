@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
         <div class="container container-special">
             <div class="row align-items-sm-baseline site-header-components">
-                <div class="site-branding col-auto col-lg-3 text-mono links-no-decoration">
+                <div id="site-header-branding" class=" col-auto col-lg-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
@@ -58,7 +58,7 @@
                     ?>
                 </nav><!-- #site-navigation -->
 
-                <nav class="site-header-social col-auto col-lg-auto ml-auto">
+                <nav id="site-header-social" class=" col-auto col-lg-auto ml-auto">
                     social
                     <?php
                     wp_nav_menu( array(
