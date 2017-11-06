@@ -1,6 +1,7 @@
 <?php
 namespace Korobochkin\RodionovTheme;
 
+use Korobochkin\RodionovTheme\Admin\Services\CustomizerSetup;
 use Korobochkin\WPKit\Themes\AbstractTheme;
 
 class Theme extends AbstractTheme
@@ -16,7 +17,15 @@ class Theme extends AbstractTheme
      */
     public function run()
     {
-        // TODO: Implement run() method.
+        add_action('customize_register', array(CustomizerSetup::class, 'setup'));
+
+        if (is_admin()) {
+            $this->runAdmin();
+        }
+    }
+
+    public function runAdmin()
+    {
     }
 
     /**

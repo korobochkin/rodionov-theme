@@ -161,3 +161,15 @@ function rodionov_theme_post_meta() {
         );
     }
 }
+
+function rodionov_theme_footer_about() {
+    echo get_theme_mod('footer_about', null);
+}
+
+/**
+ * @param string $path
+ */
+function rodionov_theme_the_asset($path = '') {
+    $url = get_template_directory_uri();
+    echo path_join($url, $path);
+}

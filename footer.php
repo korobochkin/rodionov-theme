@@ -56,11 +56,14 @@
                     ) );
                     ?>
                 </div>
-                <div class="site-footer-about col-sm-6 text-gray">
-                    2
+                <div class="site-footer-about col-sm-5 text-gray">
+                    <?php rodionov_theme_footer_about(); ?>
                 </div>
-                <div class="site-footer-powered col-sm-2 text-gray">
+                <div class="site-footer-powered col-sm-4 text-gray">
                     Сайт работает на Setka Editor
+                    <svg class="icon">
+                        <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-black-white'); ?>" />
+                    </svg>
                 </div>
             </div>
 
