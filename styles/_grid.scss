@@ -1,0 +1,8 @@
+@if $enable-grid-classes {
+  .container-special {
+    //@include make-container();
+    @include media-breakpoint-down(md) {
+      max-width: none;
+    }
+  }
+}

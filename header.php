@@ -26,9 +26,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'rodionov-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-        <div class="container">
+        <div class="container container-special">
             <div class="row align-items-sm-baseline site-header-components">
-                <div class="site-branding col-sm-3 text-mono links-no-decoration">
+                <div class="site-branding col-lg-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
@@ -45,7 +45,7 @@
                     endif; ?>
                 </div><!-- .site-branding -->
 
-                <nav id="site-navigation" class="main-navigation col-auto text-mono links-no-decoration">
+                <nav id="site-navigation" class="main-navigation col-lg-auto text-mono links-no-decoration">
                     <button class="menu-toggle d-none" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rodionov-theme' ); ?></button>
                     <?php
                         wp_nav_menu( array(
@@ -58,7 +58,7 @@
                     ?>
                 </nav><!-- #site-navigation -->
 
-                <nav class="site-header-social col-auto ml-auto">
+                <nav class="site-header-social col-lg-auto ml-auto">
                     social
                     <?php
                     wp_nav_menu( array(

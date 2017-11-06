@@ -20,6 +20,12 @@
   }
 }
 
+#site-navigation {
+  @include media-breakpoint-down(md) {
+    background: $body-bg;
+  }
+}
+
 #primary-menu {
 
   .menu-item {
