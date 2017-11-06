@@ -60,10 +60,14 @@
                     <?php rodionov_theme_footer_about(); ?>
                 </div>
                 <div class="site-footer-powered col-sm-4 text-gray">
-                    Сайт работает на Setka Editor
-                    <svg class="icon">
-                        <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-black-white'); ?>" />
-                    </svg>
+                    <p>Сайт работает на&nbsp;<a href="https://setka.io/ru/" target="_blank" class="setka-logo align-middle"><svg class="logo-bw">
+                            <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-black-white'); ?>" title="Setka Editor"
+                                 alt="Setka Editor logo" />
+                        </svg>
+                        <svg class="logo-color">
+                            <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-color'); ?>" title="Setka Editor"
+                                 alt="Setka Editor logo" />
+                        </svg></a></p>
                 </div>
             </div>
 

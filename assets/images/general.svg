@@ -1,6 +1,6 @@
 <svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <symbol id="setka-editor-logo-black-white" width="140px" height="26px" viewBox="0 0 140 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="setka-editor-logo-black-white" viewBox="0 0 140 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <polygon id="path-1" points="0.673105263 0.289636364 9.16766667 0.289636364 9.16766667 21.5258727 0.673105263 21.5258727 0.673105263 0.289636364"></polygon>
                 <polygon id="path-3" points="0 26.7108545 139.522281 26.7108545 139.522281 1.22776364 0 1.22776364"></polygon>
@@ -40,7 +40,7 @@
         </symbol>
 
 
-        <symbol id="setka-editor-logo-color" width="140px" height="26px" viewBox="0 0 140 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="setka-editor-logo-color" viewBox="0 0 140 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <polygon id="path-1" points="0 25.7083048 139.522281 25.7083048 139.522281 0.000495238095 0 0.000495238095"></polygon>
             </defs>

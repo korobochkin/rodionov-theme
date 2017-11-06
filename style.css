@@ -6437,6 +6437,27 @@ a.text-dark:focus, a.text-dark:hover {
 .site-footer-under-title a {
   text-decoration: underline; }
 
+.site-footer-powered {
+  text-align: right; }
+  .site-footer-powered .setka-logo {
+    width: 140px;
+    height: 26px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: -.035em;
+    margin: 0 .1em; }
+    .site-footer-powered .setka-logo svg {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto; }
+    .site-footer-powered .setka-logo .logo-color {
+      display: none; }
+    .site-footer-powered .setka-logo:hover .logo-bw {
+      display: none; }
+    .site-footer-powered .setka-logo:hover .logo-color {
+      display: block; }
+
 .page-header {
   margin: 55px 0 100px 0; }
 

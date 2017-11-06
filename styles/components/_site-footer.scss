@@ -46,3 +46,35 @@
     text-decoration: underline;
   }
 }
+
+.site-footer-powered {
+  text-align: right;
+
+  .setka-logo {
+    width: 140px;
+    height: 26px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: -.035em;
+    margin: 0 .1em;
+
+    svg {
+      max-height: 100%;
+      @include img-fluid();
+    }
+
+    .logo-color {
+      display: none;
+    }
+
+    &:hover {
+      .logo-bw {
+        display: none;
+      }
+      .logo-color {
+        display: block;
+      }
+    }
+  }
+}
