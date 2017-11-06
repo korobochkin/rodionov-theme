@@ -14,13 +14,13 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-        <div class="container site-footer-components ">
+        <div class="container container-special site-footer-components">
 
             <div class="row align-items-sm-baseline">
-                <div class="site-footer-header col-sm-3 text-gray links-no-decoration">
-                    <p class="site-footer-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                <div id="site-footer-header" class="col-auto col-lg-3 text-gray links-no-decoration">
+                    <p id="site-footer-title" class="m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
                 </div>
-                <nav class="site-footer-menu col-auto text-gray links-no-decoration">
+                <nav id="site-footer-menu" class="col-12 col-lg-7 text-gray links-no-decoration">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2',
@@ -30,7 +30,7 @@
                     ) );
                     ?>
                 </nav><!-- #site-navigation -->
-                <nav class="site-footer-social col-auto ml-auto text-gray links-no-decoration">
+                <nav id="site-footer-social" class="col-auto ml-auto text-gray links-no-decoration">
                     social
                     <?php
                     wp_nav_menu( array(
@@ -46,7 +46,7 @@
             <div class="site-footer-dash"></div>
 
             <div class="row">
-                <div class="site-footer-under-title col-sm-3 text-gray">
+                <div id="site-footer-under-title" class="col-12 col-lg-3 text-gray">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2-under-title',
@@ -56,11 +56,11 @@
                     ) );
                     ?>
                 </div>
-                <div class="site-footer-about col-sm-5 text-gray">
+                <div id="site-footer-about" class="col-12 col-lg-5 text-gray">
                     <?php rodionov_theme_footer_about(); ?>
                 </div>
-                <div class="site-footer-powered col-sm-4 text-gray">
-                    <p>Сайт работает на&nbsp;<a href="https://setka.io/ru/" target="_blank" class="setka-logo align-middle"><svg class="logo-bw">
+                <div id="site-footer-powered" class="col-12 col-lg-4 text-gray">
+                    <p class="m-0">Сайт работает на&nbsp;<a href="https://setka.io/ru/" target="_blank" class="setka-logo align-middle"><svg class="logo-bw">
                             <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-black-white'); ?>" title="Setka Editor"
                                  alt="Setka Editor logo" />
                         </svg>

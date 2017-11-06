@@ -2,10 +2,21 @@
   background-color: #000;
 }
 
-.site-footer-title {
-  font-size: 24px;
+#site-footer-header {
+  order: 10;
+}
+
+#site-footer-title {
+  font-size: 36px;
   line-height: 1;
   font-weight: 700;
+
+  margin: 19px 0 24px 0;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    margin: 0;
+  }
 
   .text-accent {
     font-weight: normal;
@@ -13,17 +24,36 @@
 }
 
 .site-footer-components {
-  //min-height: 5em;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 46px;
+  //padding-bottom: 46px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.site-footer-menu {
+#site-footer-menu {
+  order: 20;
+  margin-top: 35px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+
   .menu-item {
     padding: 0 30px 0 0;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
+  }
+}
+
+#site-footer-social {
+  order: 15;
+
+  @include media-breakpoint-up(lg) {
+    order: 30;
   }
 }
 
@@ -34,21 +64,29 @@
   margin: 36px 0;
 }
 
-.site-footer-under-title,
-.site-footer-about,
-.site-footer-powered {
+#site-footer-under-title,
+#site-footer-about,
+#site-footer-powered {
   font-size: 14px;
   line-height: 19px;
+  margin-bottom: 28px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
 }
 
-.site-footer-under-title {
+#site-footer-under-title {
   a {
     text-decoration: underline;
   }
 }
 
-.site-footer-powered {
-  text-align: right;
+#site-footer-powered {
+
+  @include media-breakpoint-up(lg) {
+    text-align: right;
+  }
 
   .setka-logo {
     width: 140px;
