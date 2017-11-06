@@ -1,4 +1,5 @@
 <?php
+use Korobochkin\RodionovTheme\Theme;
 /**
  * Jetpack Compatibility File
  *
@@ -53,3 +54,14 @@ function rodionov_theme_infinite_scroll_render() {
 		endif;
 	}
 }
+
+/**
+ * @param $settings array
+ *
+ * @return array
+ */
+function rodionov_theme_infinite_scroll_js_settings( $settings ) {
+    $settings['text'] = __( 'More posts', Theme::NAME );
+    return $settings;
+}
+add_filter( 'infinite_scroll_js_settings', 'rodionov_theme_infinite_scroll_js_settings' );

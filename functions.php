@@ -6,6 +6,9 @@
  *
  * @package Rodionov_Theme
  */
+if( !class_exists( 'Korobochkin\RodionovTheme\Theme' ) ) {
+    require_once 'vendor/autoload.php';
+}
 
 if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 	/**

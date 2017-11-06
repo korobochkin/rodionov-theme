@@ -11,5 +11,10 @@
     "minimum-stability": "stable",
     "require": {
         "korobochkin/wp-kit": "^0.5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Korobochkin\\RodionovTheme\\": "source/"
+        }
     }
 }
