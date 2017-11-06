@@ -29,7 +29,7 @@
     <?php endif; ?>
 
     <div class="entry-excerpt row">
-        <div class="col-md-7">
+        <div class="col-12 col-lg-7">
             <?php the_excerpt(); ?>
         </div>
     </div>
