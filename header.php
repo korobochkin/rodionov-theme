@@ -28,13 +28,13 @@
 	<header id="masthead" class="site-header">
         <div class="container container-special">
             <div class="row align-items-sm-baseline site-header-components">
-                <div class="site-branding col-lg-3 text-mono links-no-decoration">
+                <div class="site-branding col-auto col-lg-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></h1>
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></h1>
                     <?php else : ?>
-                        <p class="site-title m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></p>
+                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></p>
                     <?php
                     endif;
 
@@ -58,7 +58,7 @@
                     ?>
                 </nav><!-- #site-navigation -->
 
-                <nav class="site-header-social col-lg-auto ml-auto">
+                <nav class="site-header-social col-auto col-lg-auto ml-auto">
                     social
                     <?php
                     wp_nav_menu( array(

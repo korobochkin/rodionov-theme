@@ -3,26 +3,40 @@
 }
 
 .site-header-components {
-  padding: 50px 0 54px 0;
+  @include media-breakpoint-up(lg) {
+    padding: 50px 0 54px 0;
+  }
 }
 
 .site-branding {
-
+  order: 10;
 }
 
 .site-title {
-  font-size: 24px;
+  font-size: 36px;
+  margin: 19px 0 24px 0;
   line-height: 1;
   font-weight: 700;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    margin: 0;
+  }
 
   .text-accent {
     font-weight: normal;
   }
 }
 
-#site-navigation {
+.main-navigation {
+  order: 20;
+
   @include media-breakpoint-down(md) {
     background: $body-bg;
+
+    padding-top: 21px;
+
+    font-size: 18px;
   }
 }
 
@@ -33,5 +47,13 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
+  }
+}
+
+.site-header-social {
+  order: 15;
+
+  @include media-breakpoint-up(lg) {
+    order: 30;
   }
 }
