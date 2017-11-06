@@ -6461,12 +6461,11 @@ a.text-dark:focus, a.text-dark:hover {
 .page-header {
   margin: 55px 0 100px 0; }
 
-body.blog .post, body.single .post, body.archive .post,
-.post body.page, body.blog
+body.blog .post, body.single .post, body.archive .post, body.page .post, body.blog
 .page, body.single
 .page, body.archive
-.page,
-.page body.page {
+.page, body.page
+.page {
   margin: 55px 0; }
 
 .page-content {
