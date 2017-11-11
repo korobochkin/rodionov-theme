@@ -6158,6 +6158,8 @@ a.text-dark:focus, a.text-dark:hover {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1; }
+#primary-menu .current-menu-item a {
+  color: #A05D36; }
 
 #site-header-social {
   order: 15;
