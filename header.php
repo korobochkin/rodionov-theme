@@ -27,7 +27,9 @@
 
 	<header id="masthead" class="site-header">
         <div class="container container-special">
-            <div class="row align-items-sm-baseline site-header-components">
+            <div class="row align-items-center align-items-lg-baseline site-header-components">
+
+
                 <div id="site-header-branding" class=" col-auto col-lg-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
@@ -45,6 +47,7 @@
                     endif; ?>
                 </div><!-- .site-branding -->
 
+
                 <nav id="site-navigation" class="main-navigation col-lg-auto text-mono links-no-decoration">
                     <button class="menu-toggle d-none" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rodionov-theme' ); ?></button>
                     <?php
@@ -58,8 +61,8 @@
                     ?>
                 </nav><!-- #site-navigation -->
 
+
                 <nav id="site-header-social" class=" col-auto col-lg-auto ml-auto">
-                    social
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-1-social',
@@ -69,6 +72,8 @@
                     ) );
                     ?>
                 </nav>
+
+
             </div>
         </div>
 	</header><!-- #masthead -->
