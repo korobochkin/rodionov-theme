@@ -21,6 +21,10 @@
   .text-accent {
     font-weight: normal;
   }
+
+  .current {
+    color: $body-bg;
+  }
 }
 
 .site-footer-components {
@@ -46,6 +50,12 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1;
+  }
+
+  .current-menu-item {
+    a {
+      color: $body-bg;
+    }
   }
 }
 

@@ -18,7 +18,11 @@
 
             <div class="row align-items-sm-baseline">
                 <div id="site-footer-header" class="col-auto col-lg-3 text-gray links-no-decoration">
-                    <p id="site-footer-title" class="m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                    <?php if ( is_front_page() && is_home() ) : ?>
+                        <p id="site-footer-title" class="m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="current" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                    <?php else : ?>
+                        <p id="site-footer-title" class="m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                    <?php endif; ?>
                 </div>
                 <nav id="site-footer-menu" class="col-12 col-lg-7 text-gray links-no-decoration">
                     <?php

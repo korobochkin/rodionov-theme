@@ -6198,6 +6198,8 @@ a.text-dark:focus, a.text-dark:hover {
       margin: 0; } }
   #site-footer-title .text-accent {
     font-weight: normal; }
+  #site-footer-title .current {
+    color: #fff; }
 
 .site-footer-components {
   padding-top: 46px; }
@@ -6217,6 +6219,8 @@ a.text-dark:focus, a.text-dark:hover {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1; }
+  #site-footer-menu .current-menu-item a {
+    color: #fff; }
 
 #site-footer-social {
   order: 15; }
