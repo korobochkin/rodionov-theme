@@ -36,7 +36,7 @@
                     if ( is_front_page() && is_home() ) : ?>
                         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></h1>
                     <?php else : ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></p>
+                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
                     <?php
                     endif;
 
