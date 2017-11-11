@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
         <div class="container container-special site-footer-components">
 
-            <div class="row align-items-sm-baseline">
+            <div class="row align-items-center align-items-lg-baseline">
                 <div id="site-footer-header" class="col-auto col-lg-3 text-gray links-no-decoration">
                     <?php if ( is_front_page() && is_home() ) : ?>
                         <p id="site-footer-title" class="m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="current" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
@@ -35,7 +35,6 @@
                     ?>
                 </nav><!-- #site-navigation -->
                 <nav id="site-footer-social" class="col-auto ml-auto text-gray links-no-decoration">
-                    social
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2-social',

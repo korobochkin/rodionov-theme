@@ -4,6 +4,10 @@
 
 #site-footer-header {
   order: 10;
+
+  @include media-breakpoint-up(lg) {
+    top: -.6em;
+  }
 }
 
 #site-footer-title {
@@ -43,6 +47,7 @@
 
   @include media-breakpoint-up(lg) {
     margin-top: 0;
+    top: -.6em;
   }
 
   .menu-item {
@@ -62,9 +67,39 @@
 
 #site-footer-social {
   order: 15;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @include media-breakpoint-up(lg) {
     order: 30;
+  }
+
+  .menu-item {
+    margin-left: 10px;
+
+    a {
+      border-radius: 50%;
+    }
+
+    a,
+    .icon {
+      display: block;
+      width: 40px;
+      height: 40px;
+
+      @include media-breakpoint-up(lg) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .icon {
+
+    }
+  }
+
+  .icon {
+    fill: rgba(255, 255, 255, .5);
   }
 }
 
