@@ -6157,7 +6157,8 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 0 30px 0 0;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1; }
+  line-height: 1;
+  letter-spacing: 1px; }
 #primary-menu .current-menu-item a {
   color: #A05D36; }
 
@@ -6220,7 +6221,8 @@ a.text-dark:focus, a.text-dark:hover {
     padding: 0 30px 0 0;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: 1px; }
   #site-footer-menu .current-menu-item a {
     color: #fff; }
 
@@ -6361,7 +6363,8 @@ a:hover {
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-right: 19px; }
+  margin-right: 19px;
+  letter-spacing: 1px; }
 .entry-meta .entry-date {
   font-size: 16px;
   line-height: 20px;
