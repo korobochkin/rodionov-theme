@@ -34,7 +34,7 @@
                     ) );
                     ?>
                 </nav><!-- #site-navigation -->
-                <nav id="site-footer-social" class="col-auto ml-auto text-gray links-no-decoration">
+                <nav id="site-footer-social" class="col-auto ml-auto text-gray links-no-decoration icons-on-dark">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-2-social',
