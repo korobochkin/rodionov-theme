@@ -170,6 +170,10 @@ function rodionov_theme_footer_about() {
  * @param string $path
  */
 function rodionov_theme_the_asset($path = '') {
+    echo rodionov_theme_get_the_asset($path);
+}
+
+function rodionov_theme_get_the_asset($path = '') {
     $url = get_template_directory_uri();
-    echo path_join($url, $path);
+    return path_join($url, $path);
 }

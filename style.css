@@ -6154,10 +6154,21 @@ a.text-dark:focus, a.text-dark:hover {
   line-height: 1; }
 
 #site-header-social {
-  order: 15; }
+  order: 15;
+  margin-top: 10px;
+  margin-bottom: 10px; }
   @media (min-width: 992px) {
     #site-header-social {
       order: 30; } }
+  #site-header-social .menu-item {
+    margin-left: 10px; }
+    #site-header-social .menu-item a {
+      border-radius: 50%; }
+    #site-header-social .menu-item a,
+    #site-header-social .menu-item .icon {
+      display: block;
+      width: 40px;
+      height: 40px; }
 
 .site-footer {
   background-color: #000; }
@@ -6296,6 +6307,16 @@ body.blog .post, body.single .post, body.archive .post, body.page .post, body.bl
 .infinite-loader .spinner {
   margin: 0 auto;
   height: 34px; }
+
+.icon {
+  fill: #c1c1c1; }
+
+a:hover .icon-facebook {
+  fill: #2857a2; }
+a:hover .icon-instagram {
+  fill: #cf00e8; }
+a:hover .icon-telegram {
+  fill: #00aeea; }
 
 .text-mono a {
   color: #212529; }

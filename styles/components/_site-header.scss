@@ -52,8 +52,29 @@
 
 #site-header-social {
   order: 15;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @include media-breakpoint-up(lg) {
     order: 30;
+  }
+
+  .menu-item {
+    margin-left: 10px;
+
+    a {
+      border-radius: 50%;
+    }
+
+    a,
+    .icon {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon {
+
+    }
   }
 }

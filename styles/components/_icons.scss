@@ -1,0 +1,19 @@
+.icon {
+  fill: #c1c1c1;
+}
+
+a {
+  @include hover {
+    .icon-facebook {
+      fill: #2857a2;
+    }
+
+    .icon-instagram {
+      fill: #cf00e8;
+    }
+
+    .icon-telegram {
+      fill: #00aeea;
+    }
+  }
+}

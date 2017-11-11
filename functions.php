@@ -1,5 +1,6 @@
 <?php
 use Korobochkin\RodionovTheme\Theme;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 /**
  * Rodionov Theme functions and definitions
  *
@@ -11,6 +12,16 @@ if( !class_exists( 'Korobochkin\RodionovTheme\Theme' ) ) {
     require_once 'vendor/autoload.php';
 }
 $GLOBALS['WPRodionovTheme'] = new Theme();
+
+// Check for DI container.
+if (isset($container) && is_a($container, ContainerBuilder::class)) {
+    // Existed container.
+    $GLOBALS['WPRodionovTheme']->setContainer($container);
+} else {
+    // Container not found.
+    $GLOBALS['WPRodionovTheme']->setContainer(new ContainerBuilder());
+}
+
 $GLOBALS['WPRodionovTheme']->run();
 
 if ( ! function_exists( 'rodionov_theme_setup' ) ) :

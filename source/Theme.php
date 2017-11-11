@@ -2,7 +2,10 @@
 namespace Korobochkin\RodionovTheme;
 
 use Korobochkin\RodionovTheme\Admin\Services\CustomizerSetup;
+use Korobochkin\RodionovTheme\Services\SocialMenu;
+use Korobochkin\RodionovTheme\Services\SocialMenuRunner;
 use Korobochkin\WPKit\Themes\AbstractTheme;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class Theme extends AbstractTheme
 {
@@ -17,15 +20,31 @@ class Theme extends AbstractTheme
      */
     public function run()
     {
+        $this->configureDependencies();
+
         add_action('customize_register', array(CustomizerSetup::class, 'setup'));
 
         if (is_admin()) {
             $this->runAdmin();
+        } else {
+            SocialMenuRunner::setContainer($this->getContainer());
+            add_filter('nav_menu_item_title', array(SocialMenuRunner::class, 'filter'), 10, 4);
         }
     }
 
     public function runAdmin()
     {
+    }
+
+    public function configureDependencies()
+    {
+        /**
+         * @var $container ContainerBuilder
+         */
+        $container = $this->getContainer();
+
+        $container
+            ->register(SocialMenu::class, SocialMenu::class);
     }
 
     /**
