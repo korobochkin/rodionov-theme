@@ -26,11 +26,6 @@ class SocialMenu
         $pattern = '<svg class="icon %2$s"><use xlink:href="%1$s#%2$s" /></svg>';
 
         switch ($host) {
-            case 't.me':
-            case 'telegram.org':
-                $icon = 'telegram';
-                break;
-
             case 'www.facebook.com':
             case 'facebook.com':
                 $icon = 'facebook';
@@ -39,6 +34,24 @@ class SocialMenu
             case 'www.instagram.com':
             case 'instagram.com':
                 $icon = 'instagram';
+                break;
+
+            case 't.me':
+            case 'telegram.org':
+                $icon = 'telegram';
+                break;
+
+            case 'rss':
+                $icon = 'rss';
+                break;
+
+            case 'twitter.com':
+                $icon = 'twitter';
+                break;
+
+            case 'youtube.com':
+            case 'www.youtube.com':
+                $icon = 'youtube';
                 break;
 
             default:

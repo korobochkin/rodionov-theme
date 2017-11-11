@@ -6358,6 +6358,12 @@ a:hover .icon-instagram {
   fill: #cf00e8; }
 a:hover .icon-telegram {
   fill: #00aeea; }
+a:hover .icon-rss {
+  fill: #ff8f00; }
+a:hover .icons-twitter {
+  fill: #00a2f9; }
+a:hover .icons-youtube {
+  fill: #ff0000; }
 
 .text-mono a {
   color: #212529; }
