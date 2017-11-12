@@ -4,6 +4,18 @@ module.exports = function (grunt) {
     // Force use of Unix newlines
     grunt.util.linefeed = '\n';
 
+    // This files compressed into plugin archive for WordPress.org version of plugin.
+    var filesToCompress = [
+        '**',
+        '!vendor/**/Test[s]*/**',
+        '!vendor/**/test[s]*/**',
+        // vendor/twig/twig folder have strange test folder name
+        '!vendor/**/test/**',
+        '!.sass-cache/**',
+        '!node_modules/**',
+        '!dist/**'
+    ];
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -30,6 +42,35 @@ module.exports = function (grunt) {
             style: {
                 src: 'style.css',
                 dest: 'style.min.css'
+            }
+        },
+
+        compress: {
+            theme: {
+                options: {
+                    archive: 'dist/<%= pkg.name %>.zip'
+                },
+                files: [
+                    {
+                        expand: true,
+                        src: filesToCompress,
+                        dest: '<%= pkg.name %>/',
+                        dot: false
+                    }
+                ]
+            },
+            themeNamed: {
+                options: {
+                    archive: 'dist/<%= pkg.name %>.<%= pkg.version %>.zip'
+                },
+                files: [
+                    {
+                        expand: true,
+                        src: filesToCompress,
+                        dest: '<%= pkg.name %>/',
+                        dot: false
+                    }
+                ]
             }
         }
     });
