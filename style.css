@@ -6323,8 +6323,8 @@ a.text-dark:focus, a.text-dark:hover {
 .page-header {
   margin: 55px 0 100px 0; }
 
-body.blog .post, body.single .post, body.archive .post, body.page .post, body.blog
-.page, body.single
+body.blog .post, body.post-template-default .post, body.archive .post, body.page .post, body.blog
+.page, body.post-template-default
 .page, body.archive
 .page, body.page
 .page {

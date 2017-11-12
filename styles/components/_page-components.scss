@@ -6,7 +6,7 @@
 .post,
 .page {
   body.blog &,
-  body.single &,
+  body.post-template-default &,
   body.archive &,
   body.page & {
     margin: 55px 0;
