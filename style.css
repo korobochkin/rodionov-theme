@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Kolya Korobochkin
 Author URI: https://korobochkin.com
 Description: Description
-Version: 1.0.0
+Version: 1.0.0-e7b7741a06183a57c26253c515202e142210fcee
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: rodionov-theme
@@ -6233,14 +6233,36 @@ a.text-dark:focus, a.text-dark:hover {
 #site-footer-social {
   order: 15;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  /*ul {
+    position: relative;
+  }*/ }
   @media (min-width: 992px) {
     #site-footer-social {
       order: 30; } }
   #site-footer-social .menu-item {
-    margin-left: 10px; }
+    margin-left: 10px;
+    position: relative;
+    /*&::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+    }*/ }
     #site-footer-social .menu-item a {
       border-radius: 50%; }
+      #site-footer-social .menu-item a:hover::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 1; }
     #site-footer-social .menu-item a,
     #site-footer-social .menu-item .icon {
       display: block;
@@ -6251,6 +6273,9 @@ a.text-dark:focus, a.text-dark:hover {
         #site-footer-social .menu-item .icon {
           width: 30px;
           height: 30px; } }
+    #site-footer-social .menu-item .icon {
+      position: relative;
+      z-index: 2; }
 
 .site-footer-dash {
   height: 2px;

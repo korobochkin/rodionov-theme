@@ -75,11 +75,31 @@
     order: 30;
   }
 
+  /*ul {
+    position: relative;
+  }*/
+
   .menu-item {
     margin-left: 10px;
+    position: relative;
 
     a {
       border-radius: 50%;
+
+      &:hover {
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 1px;
+          right: 1px;
+          bottom: 1px;
+          left: 1px;
+          background-color: #fff;
+          border-radius: 50%;
+          z-index: 1;
+        }
+      }
     }
 
     a,
@@ -95,8 +115,17 @@
     }
 
     .icon {
-
+      position: relative;
+      z-index: 2;
     }
+
+    /*&::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+    }*/
   }
 }
 
