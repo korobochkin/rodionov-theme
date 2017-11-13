@@ -527,10 +527,10 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 940px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 940px; } }
 
 .container-fluid {
   width: 100%;
@@ -6363,10 +6363,10 @@ body.blog .post, body.post-template-default .post, body.archive .post, body.page
       max-width: 720px; } }
   @media (min-width: 992px) {
     .infinite-wrap {
-      max-width: 960px; } }
+      max-width: 940px; } }
   @media (min-width: 1200px) {
     .infinite-wrap {
-      max-width: 1140px; } }
+      max-width: 940px; } }
 
 .infinite-loader .spinner {
   margin: 0 auto;
