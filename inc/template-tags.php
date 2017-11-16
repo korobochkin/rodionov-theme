@@ -151,15 +151,6 @@ function rodionov_theme_post_meta() {
     );
 
     echo '<span class="entry-date">' . $time_string . '</span>'; // WPCS: XSS OK.
-
-    if (is_single()) {
-        edit_post_link(
-            sprintf(
-                esc_html__( 'Edit', 'rodionov-theme' ),
-                the_title( '<span class="screen-reader-text">"', '"</span>', false )
-            )
-        );
-    }
 }
 
 function rodionov_theme_footer_about() {
