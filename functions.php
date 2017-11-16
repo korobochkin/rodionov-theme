@@ -59,6 +59,8 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		set_post_thumbnail_size( 1200, 630, true );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'rodionov-theme' ),
@@ -81,10 +83,10 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'rodionov_theme_custom_background_args', array(
+		/*add_theme_support( 'custom-background', apply_filters( 'rodionov_theme_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
-		) ) );
+		) ) );*/
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -94,12 +96,12 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
+		/*add_theme_support( 'custom-logo', array(
 			'height'      => 250,
 			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
-		) );
+		) );*/
 	}
 endif;
 add_action( 'after_setup_theme', 'rodionov_theme_setup' );
