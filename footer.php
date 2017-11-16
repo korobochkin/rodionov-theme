@@ -59,7 +59,7 @@
                     <?php rodionov_theme_footer_about(); ?>
                 </div>
                 <div id="site-footer-powered" class="col-12 col-lg-4 text-gray">
-                    <p class="m-0">Сайт работает на&nbsp;<a href="https://setka.io/ru/" target="_blank" class="setka-logo align-middle"><svg class="logo-bw">
+                    <p class="m-0"><a href="https://setka.io/ru/" target="_blank" class="setka-logo align-middle"><svg class="logo-bw">
                             <use xlink:href="<?php rodionov_theme_the_asset('assets/images/general.svg#setka-editor-logo-black-white'); ?>" title="Setka Editor"
                                  alt="Setka Editor logo" />
                         </svg>
