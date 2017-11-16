@@ -21,7 +21,7 @@
     <?php if( has_post_thumbnail() ) : ?>
         <div class="entry-cover">
             <figure class="entry-preview">
-                <a href="<?php esc_url( get_permalink() ) ?>" rel="bookmark">
+                <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
                     <?php the_post_thumbnail('rodionov-theme-home-thumbnail'); ?>
                 </a>
             </figure>
