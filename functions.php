@@ -112,7 +112,7 @@ add_action( 'after_setup_theme', 'rodionov_theme_setup' );
  * @global int $content_width
  */
 function rodionov_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'rodionov_theme_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'rodionov_theme_content_width', 910 );
 }
 add_action( 'after_setup_theme', 'rodionov_theme_content_width', 0 );
 
