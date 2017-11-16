@@ -26,7 +26,7 @@
 	<?php if( has_post_thumbnail() ) : ?>
         <div class="entry-cover">
             <figure class="entry-preview">
-                <?php the_post_thumbnail('rodionov-theme-home-thumbnail'); ?>
+                <?php the_post_thumbnail(); ?>
             </figure>
         </div>
 	<?php endif; ?>

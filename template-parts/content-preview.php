@@ -22,7 +22,7 @@
         <div class="entry-cover">
             <figure class="entry-preview">
                 <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
-                    <?php the_post_thumbnail('rodionov-theme-home-thumbnail'); ?>
+                    <?php the_post_thumbnail(); ?>
                 </a>
             </figure>
         </div>
