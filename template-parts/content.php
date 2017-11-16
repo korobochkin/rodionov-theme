@@ -23,6 +23,14 @@
         ?>
 	</header><!-- .entry-header -->
 
+	<?php if( has_post_thumbnail() ) : ?>
+        <div class="entry-cover">
+            <figure class="entry-preview">
+                <?php the_post_thumbnail('rodionov-theme-home-thumbnail'); ?>
+            </figure>
+        </div>
+	<?php endif; ?>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
