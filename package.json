@@ -1,6 +1,6 @@
 {
   "name": "rodionov-theme",
-  "version": "1.0.0-3c2f1faf3d53f481f13f352cc766a8246dde12a9",
+  "version": "1.0.0-0ac4df575fd365b70dad70889b768e6bae9fef78",
   "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
   "main": "index.js",
   "scripts": {
