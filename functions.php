@@ -151,6 +151,7 @@ function rodionov_theme_scripts() {
 	}
 
     wp_dequeue_style( 'the-neverending-homepage' );
+	wp_dequeue_script( 'jetpack_css' );
 }
 add_action( 'wp_enqueue_scripts', 'rodionov_theme_scripts' );
 
