@@ -31,6 +31,12 @@
         </div>
 	<?php endif; ?>
 
+    <div class="entry-excerpt row">
+        <div class="col-12 col-lg-7">
+            <?php the_excerpt(); ?>
+        </div>
+    </div>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
