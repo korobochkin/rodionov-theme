@@ -47,7 +47,7 @@ add_action( 'after_setup_theme', 'rodionov_theme_jetpack_setup' );
 function rodionov_theme_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		if ( is_search() ) :
+		if ( is_home() || is_search() || is_archive() ) :
 			get_template_part( 'template-parts/content-preview' );
 		else :
 			get_template_part( 'template-parts/content', get_post_format() );
