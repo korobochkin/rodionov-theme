@@ -149,9 +149,6 @@ function rodionov_theme_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-    wp_dequeue_style( 'the-neverending-homepage' );
-	wp_dequeue_script( 'jetpack_css' );
 }
 add_action( 'wp_enqueue_scripts', 'rodionov_theme_scripts' );
 
