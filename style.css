@@ -6332,7 +6332,8 @@ body.blog .page, body.post-template-default .page, body.archive .page, body.page
   background-color: #f2f2f2;
   padding: 41px 0; }
   #infinite-handle span {
-    padding: 0 !important; }
+    padding: 0 !important;
+    background: none !important; }
   #infinite-handle button {
     background-color: #484848 !important;
     color: #f2f2f2 !important;
@@ -6345,6 +6346,8 @@ body.blog .page, body.post-template-default .page, body.archive .page, body.page
     margin: 0 auto !important;
     display: block !important;
     cursor: pointer !important; }
+    #infinite-handle button:hover {
+      background-color: #626262 !important; }
 
 .infinite-wrap {
   width: 100%;
@@ -6352,18 +6355,9 @@ body.blog .page, body.post-template-default .page, body.archive .page, body.page
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 576px) {
-    .infinite-wrap {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .infinite-wrap {
-      max-width: 720px; } }
   @media (min-width: 992px) {
     .infinite-wrap {
-      max-width: 940px; } }
-  @media (min-width: 1200px) {
-    .infinite-wrap {
-      max-width: 940px; } }
+      width: 940px; } }
 
 .infinite-loader .spinner {
   margin: 0 auto !important;
