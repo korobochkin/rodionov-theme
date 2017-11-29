@@ -6439,4 +6439,7 @@ a:hover {
   .entry-share .likely {
     display: block !important; }
 
+.entry-content .likely {
+  display: block !important; }
+
 /*# sourceMappingURL=style.css.map */

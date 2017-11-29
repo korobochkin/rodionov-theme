@@ -51,7 +51,13 @@
 .entry-share {
   margin-top: 13px;
   margin-bottom: 50px;
-  
+
+  .likely {
+    display: block !important;
+  }
+}
+
+.entry-content {
   .likely {
     display: block !important;
   }

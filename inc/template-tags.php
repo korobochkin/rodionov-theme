@@ -170,5 +170,9 @@ function rodionov_theme_get_the_asset($path = '') {
 }
 
 function rodionov_theme_share_buttons() {
-    ?><div class="likely likely-big"><div class="facebook">Поделиться</div><div class="telegram">Отправить</div></div><?php
+    return '<div class="likely likely-big"><div class="facebook">Поделиться</div><div class="telegram">Отправить</div></div>';
+}
+
+function rodionov_theme_the_share_buttons() {
+    echo rodionov_theme_share_buttons();
 }

@@ -24,6 +24,8 @@ class Theme extends AbstractTheme
 
         add_action('customize_register', array(CustomizerSetup::class, 'setup'));
 
+        add_shortcode('share', 'rodionov_theme_share_buttons');
+
         if (is_admin()) {
             $this->runAdmin();
         } else {
