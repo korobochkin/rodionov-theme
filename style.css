@@ -6433,4 +6433,10 @@ a:hover {
   color: #adb5bd;
   margin-top: 22px; }
 
+.entry-share {
+  margin-top: 13px;
+  margin-bottom: 50px; }
+  .entry-share .likely {
+    display: block !important; }
+
 /*# sourceMappingURL=style.css.map */

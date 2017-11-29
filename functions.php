@@ -149,6 +149,11 @@ function rodionov_theme_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Share buttons
+	wp_enqueue_script('rodionov-theme-likely', get_template_directory_uri() .'/assets/likely/likely.js', array(), Theme::VERSION, true);
+	wp_enqueue_style('rodionov-theme-likely', get_template_directory_uri() .'/assets/likely/likely.css', array(), Theme::VERSION);
+
 }
 add_action( 'wp_enqueue_scripts', 'rodionov_theme_scripts' );
 

@@ -37,6 +37,8 @@
         </div>
     </div>
 
+    <div class="entry-share"><?php rodionov_theme_share_buttons(); ?></div>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
