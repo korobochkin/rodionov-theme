@@ -6130,7 +6130,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .site-title {
   font-size: 26px;
-  margin: 19px 0 24px 0;
+  margin: 24px 0 24px 0;
   line-height: 1;
   font-weight: 700; }
   @media (min-width: 992px) {
@@ -6195,7 +6195,7 @@ a.text-dark:focus, a.text-dark:hover {
   font-size: 26px;
   line-height: 1;
   font-weight: 700;
-  margin: 19px 0 24px 0; }
+  margin: 24px 0 24px 0; }
   @media (min-width: 992px) {
     #site-footer-title {
       font-size: 24px;
