@@ -11,33 +11,40 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-        <?php if ( 'post' === get_post_type() ) : ?>
-            <div class="entry-meta text-mono links-no-decoration"><?php rodionov_theme_post_meta(); ?></div>
-        <?php endif; ?>
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title text-mono links-no-decoration"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-        ?>
+        <div class="container container-special">
+            <?php if ( 'post' === get_post_type() ) : ?>
+                <div class="entry-meta text-mono links-no-decoration"><?php rodionov_theme_post_meta(); ?></div>
+            <?php endif; ?>
+            <?php
+            if ( is_singular() ) :
+                the_title( '<h1 class="entry-title">', '</h1>' );
+            else :
+                the_title( '<h2 class="entry-title text-mono links-no-decoration"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            endif;
+            ?>
+        </div>
 	</header><!-- .entry-header -->
 
 	<?php if( has_post_thumbnail() ) : ?>
         <div class="entry-cover">
-            <figure class="entry-preview">
-                <?php the_post_thumbnail(); ?>
-            </figure>
+            <div class="container container-special">
+                <figure class="entry-preview">
+                    <?php the_post_thumbnail(); ?>
+                </figure>
+            </div>
         </div>
 	<?php endif; ?>
 
-    <div class="entry-excerpt row">
-        <div class="col-12 col-lg-7">
-            <?php the_excerpt(); ?>
+    <div class="container container-special">
+        <div class="entry-excerpt row">
+            <div class="col-12 col-lg-7">
+                <?php the_excerpt(); ?>
+            </div>
         </div>
+
+        <div class="entry-share"><?php rodionov_theme_the_share_buttons(); ?></div>
     </div>
 
-    <div class="entry-share"><?php rodionov_theme_the_share_buttons(); ?></div>
 
 	<div class="entry-content">
 		<?php

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area container container-special">
+	<div id="primary" class="content-area container-special">
 		<main id="main" class="site-main">
 
 		<?php

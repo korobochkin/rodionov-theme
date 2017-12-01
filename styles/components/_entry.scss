@@ -54,11 +54,23 @@
 
   .likely {
     display: block !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .likely__widget {
+    margin-left: 0 !important;
   }
 }
 
 .entry-content {
   .likely {
     display: block !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .likely__widget {
+    margin-left: 0 !important;
   }
 }
