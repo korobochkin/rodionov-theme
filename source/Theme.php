@@ -13,7 +13,7 @@ class Theme extends AbstractTheme
 
     const _NAME_ = 'rodionov_theme';
 
-    const VERSION = '1.0.0-95d003e239ebe4c2a73ca90fb2a38bb66f65bb7b';
+    const VERSION = '1.0.0-4896aabd687c378f8f4856c0a12a2e2dd8a89a06';
 
     /**
      * @inheritdoc
