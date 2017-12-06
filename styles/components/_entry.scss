@@ -33,6 +33,14 @@
 }
 
 .entry-cover {
+  margin-right: -($grid-gutter-width / 2);
+  margin-left: -($grid-gutter-width / 2);
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   img {
     @include img-fluid();
   }

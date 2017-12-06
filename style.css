@@ -6422,9 +6422,16 @@ a:hover {
   line-height: 48px;
   margin: .05em 0 .5em 0; }
 
-.entry-cover img {
-  max-width: 100%;
-  height: auto; }
+.entry-cover {
+  margin-right: -10px;
+  margin-left: -10px; }
+  @media (min-width: 992px) {
+    .entry-cover {
+      margin-right: 0;
+      margin-left: 0; } }
+  .entry-cover img {
+    max-width: 100%;
+    height: auto; }
 
 .entry-excerpt {
   font-size: 24px;
