@@ -1,3 +1,10 @@
+
+.entry-header {
+  @include media-breakpoint-up(lg) {
+    order: 10;
+  }
+}
+
 .entry-meta {
 
   .entry-categories {
@@ -28,11 +35,21 @@
 
 .entry-title {
   font-size: 36px;
-  line-height: 48px;
+  line-height: 42px;
   margin: .05em 0 .5em 0;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 48px;
+  }
 }
 
 .entry-cover {
+  @include media-breakpoint-up(lg) {
+    order: 20;
+  }
+}
+
+.entry-preview {
   margin-right: -($grid-gutter-width / 2);
   margin-left: -($grid-gutter-width / 2);
 
@@ -47,6 +64,7 @@
 }
 
 .entry-excerpt {
+  display: none;
   font-size: 24px;
   line-height: 31px;
   font-family: $font-family-accent;
@@ -54,6 +72,11 @@
   color: $gray-500;
 
   margin-top: 22px;
+
+  @include media-breakpoint-up(lg) {
+    order: 30;
+    display: block;
+  }
 }
 
 .entry-share {
