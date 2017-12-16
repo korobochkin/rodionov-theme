@@ -4,7 +4,7 @@
 
 .site-header-components {
   @include media-breakpoint-up(lg) {
-    padding: 40px 0 40px 0;
+    padding: 35px 0 35px 0;
   }
 }
 
@@ -29,6 +29,41 @@
 
   .text-accent {
     font-weight: normal;
+  }
+}
+
+#site-header-icon {
+  position: relative;
+  width: 46px;
+
+  @include media-breakpoint-up(lg) {
+    top: -3em;
+    width: 66px;
+  }
+
+  a {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    transition: opacity 400ms;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      width: 66px;
+      height: 66px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 

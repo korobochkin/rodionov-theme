@@ -6135,7 +6135,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 992px) {
   .site-header-components {
-    padding: 40px 0 40px 0; } }
+    padding: 35px 0 35px 0; } }
 
 #site-header-branding {
   order: 10; }
@@ -6154,6 +6154,31 @@ a.text-dark:focus, a.text-dark:hover {
       margin: 0; } }
   .site-title .text-accent {
     font-weight: normal; }
+
+#site-header-icon {
+  position: relative;
+  width: 46px; }
+  @media (min-width: 992px) {
+    #site-header-icon {
+      top: -3em;
+      width: 66px; } }
+  #site-header-icon a {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: opacity 400ms; }
+    @media (min-width: 992px) {
+      #site-header-icon a {
+        position: absolute;
+        width: 66px;
+        height: 66px; } }
+    #site-header-icon a:hover {
+      opacity: .8; }
+  #site-header-icon img {
+    width: 100%;
+    height: auto; }
 
 #site-navigation {
   order: 20; }
