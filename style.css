@@ -6210,6 +6210,7 @@ a.text-dark:focus, a.text-dark:hover {
 #site-footer-title {
   font-size: 22px;
   line-height: 1;
+  font-family: "Walsheim";
   font-weight: 700;
   margin: 24px 0 24px 0; }
   @media (min-width: 992px) {
@@ -6238,7 +6239,8 @@ a.text-dark:focus, a.text-dark:hover {
   #site-footer-menu .menu-item {
     margin: 15px 30px 15px 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: "Walsheim";
+    font-weight: 500;
     line-height: 1;
     letter-spacing: 1px; }
   #site-footer-menu .current-menu-item a {
