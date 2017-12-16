@@ -18,7 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i|Roboto:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,9 +34,9 @@
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></h1>
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Родионов</a></h1>
                     <?php else : ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Блог <span class="text-accent">Родионова</span></a></p>
+                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Родионов</a></p>
                     <?php
                     endif;
 
