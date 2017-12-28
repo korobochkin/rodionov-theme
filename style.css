@@ -6139,9 +6139,6 @@ a.text-dark:focus, a.text-dark:hover {
 
 #site-header-branding {
   order: 10; }
-  @media (min-width: 992px) {
-    #site-header-branding {
-      top: -.6em; } }
 
 .site-title {
   font-size: 22px;
@@ -6160,7 +6157,6 @@ a.text-dark:focus, a.text-dark:hover {
   width: 46px; }
   @media (min-width: 992px) {
     #site-header-icon {
-      top: -3em;
       width: 66px; } }
   #site-header-icon a {
     display: block;
@@ -6171,7 +6167,6 @@ a.text-dark:focus, a.text-dark:hover {
     transition: opacity 400ms; }
     @media (min-width: 992px) {
       #site-header-icon a {
-        position: absolute;
         width: 66px;
         height: 66px; } }
     #site-header-icon a:hover {
@@ -6187,9 +6182,6 @@ a.text-dark:focus, a.text-dark:hover {
       background: #fff;
       padding-top: 5px;
       font-size: 18px; } }
-  @media (min-width: 992px) {
-    #site-navigation {
-      top: -.6em; } }
 
 #primary-menu .menu-item {
   margin: 15px 30px 15px 0;

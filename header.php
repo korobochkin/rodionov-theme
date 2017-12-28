@@ -33,20 +33,20 @@
                     <div id="site-header-icon"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php rodionov_theme_the_asset('assets/images/ava.png'); ?>" width="66" height="66"></a></div>
                 </div>
 
-                <div id="site-header-branding" class=" col-auto col-lg-3 text-mono links-no-decoration">
+                <div id="site-header-branding" class="col-auto col-lg-3 text-mono links-no-decoration">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) : ?>
                         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Родионов</a></h1>
                     <?php else : ?>
                         <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Родионов</a></p>
-                    <?php
+                        <?php
                     endif;
 
                     $description = get_bloginfo( 'description', 'display' );
                     if ( $description || is_customize_preview() ) : ?>
                         <p class="site-description screen-reader-text"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-                    <?php
+                        <?php
                     endif; ?>
                 </div><!-- .site-branding -->
 
@@ -54,18 +54,18 @@
                 <nav id="site-navigation" class="main-navigation col-lg-auto text-mono links-no-decoration">
                     <button class="menu-toggle d-none" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rodionov-theme' ); ?></button>
                     <?php
-                        wp_nav_menu( array(
-                            'theme_location' => 'menu-1',
-                            'menu_id'        => 'primary-menu',
-                            'menu_class'     => 'row m-0 list-unstyled',
-                            'fallback_cb'    => false,
-                            'depth'          => 1,
-                        ) );
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                        'menu_class'     => 'row m-0 list-unstyled',
+                        'fallback_cb'    => false,
+                        'depth'          => 1,
+                    ) );
                     ?>
                 </nav><!-- #site-navigation -->
 
 
-                <nav id="site-header-social" class=" col-auto col-lg-auto ml-auto">
+                <nav id="site-header-social" class="align-self-center col-auto col-lg-auto ml-auto">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-1-social',
@@ -75,7 +75,6 @@
                     ) );
                     ?>
                 </nav>
-
 
             </div>
         </div>
