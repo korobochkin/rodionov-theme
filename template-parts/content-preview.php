@@ -31,7 +31,7 @@
 
         <div class="entry-excerpt col-12">
             <div class="row">
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-10">
                     <?php the_excerpt(); ?>
                 </div>
             </div>
