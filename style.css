@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Kolya Korobochkin
 Author URI: https://korobochkin.com
 Description: Description
-Version: 1.0.0-2480b4e1b31f54c64988d9e871af9b29d5c5b25a
+Version: 1.0.0-8176219e3f0127e409884f2f8967a9c79f24c1f8
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: rodionov-theme
@@ -6135,7 +6135,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 992px) {
   .site-header-components {
-    padding: 35px 0 35px 0; } }
+    padding: 15px 0 15px 0; } }
 
 #site-header-branding {
   order: 10; }
@@ -6466,8 +6466,8 @@ a:hover {
   margin-right: 19px; }
 
 .entry-title {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 48px;
+  line-height: 54px;
   margin: .05em 0 .5em 0; }
   @media (min-width: 992px) {
     .entry-title {
@@ -6492,8 +6492,8 @@ a:hover {
   display: none;
   font-size: 24px;
   line-height: 31px;
-  font-family: "PT Serif", serif;
-  color: #adb5bd;
+  font-family: "Walsheim";
+  color: rgba(0, 0, 0, 0.5);
   margin-top: 22px; }
   @media (min-width: 992px) {
     .entry-excerpt {
