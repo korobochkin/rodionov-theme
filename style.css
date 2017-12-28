@@ -6484,16 +6484,16 @@ a:hover {
   display: none;
   font-size: 24px;
   line-height: 31px;
-  font-family: "Walsheim";
+  font-family: "PT Serif", serif;
   color: rgba(0, 0, 0, 0.5);
-  margin-top: 30px; }
+  margin-top: 23px; }
   @media (min-width: 992px) {
     .entry-excerpt {
       order: 30;
       display: block; } }
 
 .entry-share {
-  margin-top: 30px;
+  margin-top: 23px;
   margin-bottom: 60px; }
   .entry-share .likely {
     display: block !important;
