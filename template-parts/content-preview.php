@@ -13,7 +13,7 @@
     <div class="row">
         <?php if( has_post_thumbnail() ) : ?>
             <div class="entry-cover col-12">
-                <figure class="entry-preview margin-0">
+                <figure class="entry-preview mb-lg-0">
                     <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
                         <?php the_post_thumbnail(); ?>
                     </a>
