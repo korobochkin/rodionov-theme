@@ -51,7 +51,7 @@
                 </div><!-- .site-branding -->
 
 
-                <nav id="site-navigation" class="main-navigation col-lg-auto text-mono links-no-decoration">
+                <nav id="site-navigation" class="d-none d-lg-block main-navigation col-lg-auto text-mono links-no-decoration">
                     <button class="menu-toggle d-none" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'rodionov-theme' ); ?></button>
                     <?php
                     wp_nav_menu( array(
