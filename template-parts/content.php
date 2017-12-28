@@ -28,7 +28,7 @@
 	<?php if( has_post_thumbnail() ) : ?>
         <div class="entry-cover">
             <div class="container container-special">
-                <figure class="entry-preview">
+                <figure class="entry-preview margin-0">
                     <?php the_post_thumbnail(); ?>
                 </figure>
             </div>

@@ -72,7 +72,7 @@
 
   color: rgba(0, 0, 0, .5);
 
-  margin-top: 22px;
+  margin-top: 30px;
 
   @include media-breakpoint-up(lg) {
     order: 30;
@@ -81,8 +81,8 @@
 }
 
 .entry-share {
-  margin-top: 13px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 
   .likely {
     display: block !important;
