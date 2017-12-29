@@ -146,4 +146,10 @@
       margin-left: 0;
     }
   }
+
+  .current-menu-item {
+    a {
+      color: $link-color;
+    }
+  }
 }
