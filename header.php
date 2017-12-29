@@ -64,8 +64,20 @@
                     ?>
                 </nav><!-- #site-navigation -->
 
+                <nav id="site-header-additional" class="d-none d-lg-block col-lg-auto ml-auto text-mono links-no-decoration">
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1-additional',
+                        'menu_id'        => 'site-header-additional-menu',
+                        'menu_class'     => 'row m-0 list-unstyled',
+                        'fallback_cb'    => false,
+                        'depth'          => 1,
+                    ) );
+                    ?>
+                </nav>
 
-                <nav id="site-header-social" class="align-self-center col-auto col-lg-auto ml-auto">
+
+                <nav id="site-header-social" class="align-self-center col-auto col-lg-auto ml-auto ml-lg-0">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'menu-1-social',

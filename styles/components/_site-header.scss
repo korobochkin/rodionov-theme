@@ -109,6 +109,10 @@
   .menu-item {
     margin-left: 10px;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     a {
       border-radius: 50%;
     }
@@ -127,6 +131,19 @@
 
     .icon {
 
+    }
+  }
+}
+
+#site-header-additional {
+  order: 25;
+  padding-right: 25px;
+
+  .menu-item {
+    margin-left: 35px;
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 }

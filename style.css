@@ -6202,6 +6202,8 @@ a.text-dark:focus, a.text-dark:hover {
       order: 30; } }
   #site-header-social .menu-item {
     margin-left: 10px; }
+    #site-header-social .menu-item:first-child {
+      margin-left: 0; }
     #site-header-social .menu-item a {
       border-radius: 50%; }
     #site-header-social .menu-item a,
@@ -6214,6 +6216,14 @@ a.text-dark:focus, a.text-dark:hover {
         #site-header-social .menu-item .icon {
           width: 30px;
           height: 30px; } }
+
+#site-header-additional {
+  order: 25;
+  padding-right: 25px; }
+  #site-header-additional .menu-item {
+    margin-left: 35px; }
+    #site-header-additional .menu-item:first-child {
+      margin-left: 0; }
 
 .site-footer {
   background-color: #000; }

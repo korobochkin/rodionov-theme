@@ -68,6 +68,7 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
             'menu-1-social' => esc_html__( 'Header Social', 'rodionov-theme' ),
             'menu-2-social' => esc_html__( 'Footer Social', 'rodionov-theme' ),
             'menu-2-under-title' => esc_html__( 'Footer Under Title', 'rodionov-theme' ),
+            'menu-1-additional' => esc_html__( 'Header Additional', 'rodionov-theme' ),
 		) );
 
 		/*
