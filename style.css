@@ -6462,12 +6462,13 @@ a:hover {
   margin-right: 19px; }
 
 .entry-title {
-  font-size: 48px;
-  line-height: 54px;
+  font-size: 36px;
+  line-height: 1.1em;
   margin: .05em 0 .5em 0; }
   @media (min-width: 992px) {
     .entry-title {
-      line-height: 48px; } }
+      font-size: 48px;
+      line-height: 54px; } }
 
 @media (min-width: 992px) {
   .entry-cover {
