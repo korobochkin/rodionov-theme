@@ -528,7 +528,7 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-code .stk-code {
+code.stk-code {
   padding: 0;
   background: none;
   border-radius: 0; }
