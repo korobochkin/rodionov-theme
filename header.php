@@ -30,7 +30,7 @@
             <div class="row align-items-center align-items-lg-baseline site-header-components">
 
                 <div class="col-auto">
-                    <div id="site-header-icon"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php rodionov_theme_the_asset('assets/images/ava-2.jpg'); ?>" width="66" height="66"></a></div>
+                    <div id="site-header-icon"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php rodionov_theme_the_asset('assets/images/ava-2.png'); ?>" width="66" height="66"></a></div>
                 </div>
 
                 <div id="site-header-branding" class="col-auto col-lg-3 text-mono links-no-decoration">
