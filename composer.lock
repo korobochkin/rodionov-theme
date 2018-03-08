@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b8fedeeb08d3a955d725c279bfb34c",
+    "content-hash": "c3c0f107eca56ed4da6e55c29388cf89",
     "packages": [
         {
             "name": "korobochkin/wp-kit",
-            "version": "v0.5.2",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/korobochkin/wp-kit.git",
-                "reference": "d6b028815c1909e6f5be5095855fd13102188efd"
+                "reference": "ab5aaa39adbf49fda3da5d70d2f868dee0691bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/korobochkin/wp-kit/zipball/d6b028815c1909e6f5be5095855fd13102188efd",
-                "reference": "d6b028815c1909e6f5be5095855fd13102188efd",
+                "url": "https://api.github.com/repos/korobochkin/wp-kit/zipball/ab5aaa39adbf49fda3da5d70d2f868dee0691bbd",
+                "reference": "ab5aaa39adbf49fda3da5d70d2f868dee0691bbd",
                 "shasum": ""
             },
             "require": {
@@ -38,7 +38,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPLv2 or later"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -47,7 +47,7 @@
                 }
             ],
             "description": "Tools for WordPress developers",
-            "time": "2017-11-01T20:09:45+00:00"
+            "time": "2018-03-03T22:17:01+00:00"
         },
         {
             "name": "paragonie/random_compat",
