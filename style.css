@@ -6376,10 +6376,13 @@ a.text-dark:focus, a.text-dark:hover {
 body.blog .post, body.post-template-default .post, body.archive .post, body.page .post,
 body.blog .page, body.post-template-default .page, body.archive .page, body.page .page {
   margin: 50px 0 60px 0; }
-  @media (max-width: 991px) {
-    body.blog .post:first-child.has-post-thumbnail, body.post-template-default .post:first-child.has-post-thumbnail, body.archive .post:first-child.has-post-thumbnail, body.page .post:first-child.has-post-thumbnail,
-    body.blog .page:first-child.has-post-thumbnail, body.post-template-default .page:first-child.has-post-thumbnail, body.archive .page:first-child.has-post-thumbnail, body.page .page:first-child.has-post-thumbnail {
-      margin-top: 0; } }
+
+@media (max-width: 991px) {
+  body.blog .post:first-child.has-post-thumbnail,
+  .post body.archive:first-child.has-post-thumbnail,
+  body.blog .page:first-child.has-post-thumbnail,
+  .page body.archive:first-child.has-post-thumbnail {
+    margin-top: 0; } }
 
 .page-content {
   margin: 50px 0 60px 0; }
