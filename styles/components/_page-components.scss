@@ -12,7 +12,8 @@
   body.blog &,
   body.post-template-default &,
   body.archive &,
-  body.page & {
+  body.page &,
+  body.search-results & {
     margin: 50px 0 60px 0;
   }
 }

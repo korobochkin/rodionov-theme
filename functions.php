@@ -39,6 +39,11 @@ if ( ! function_exists( 'rodionov_theme_setup' ) ) :
 		 * If you're building a theme based on Rodionov Theme, use a find and replace
 		 * to change 'rodionov-theme' to the name of your theme in all the template files.
 		 */
+		/*
+php /srv/www/wordpress-develop/tools/i18n/makepot.php wp-theme \
+    /srv/www/wordpress-default/wp-content/themes/rodionov-theme/ \
+    /srv/www/wordpress-default/wp-content/plugins/rodionov-theme/languages/rodionov-theme.pot;
+		 */
 		load_theme_textdomain( 'rodionov-theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.

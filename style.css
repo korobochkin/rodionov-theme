@@ -4500,8 +4500,8 @@ a.text-dark:focus, a.text-dark:hover {
   .no-results .page-header {
     margin-bottom: 50px; }
 
-body.blog .post, body.post-template-default .post, body.archive .post, body.page .post,
-body.blog .page, body.post-template-default .page, body.archive .page, body.page .page {
+body.blog .post, body.post-template-default .post, body.archive .post, body.page .post, body.search-results .post,
+body.blog .page, body.post-template-default .page, body.archive .page, body.page .page, body.search-results .page {
   margin: 50px 0 60px 0; }
 
 @media (max-width: 991px) {

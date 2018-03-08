@@ -1,14 +1,15 @@
-# Copyright (C) 2017 Kolya Korobochkin
+# Copyright (C) 2018 Kolya Korobochkin
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rodionov Theme 1.0.0\n"
+"Project-Id-Version: Rodionov Theme "
+"1.0.0-02629dbe221a388a3787b89535709a1e80b1d57b\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rodionov-theme\n"
-"POT-Creation-Date: 2017-11-06 11:43:03+00:00\n"
+"POT-Creation-Date: 2018-03-08 23:08:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -39,31 +40,35 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:50
+#: functions.php:71
 msgid "Primary"
 msgstr ""
 
-#: functions.php:51
+#: functions.php:72
 msgid "Footer Primary"
 msgstr ""
 
-#: functions.php:52
-msgid "Primary Social"
+#: functions.php:73
+msgid "Header Social"
 msgstr ""
 
-#: functions.php:53
-msgid "Footer Primary Social"
+#: functions.php:74
+msgid "Footer Social"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:75
 msgid "Footer Under Title"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:76
+msgid "Header Additional"
+msgstr ""
+
+#: functions.php:134
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:136
 msgid "Add widgets here."
 msgstr ""
 
@@ -71,7 +76,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:49
+#: header.php:55
 msgid "Primary Menu"
 msgstr ""
 
@@ -122,13 +127,28 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-tags.php:158
-msgid "Edit"
-msgstr ""
-
 #. translators: %s: search query.
 #: search.php:21
 msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:18
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: source/Admin/Services/CustomizerSetup.php:24
+msgid "About in Footer"
 msgstr ""
 
 #: template-parts/content-none.php:14
@@ -153,12 +173,12 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:22 template-parts/content.php:42
+#: template-parts/content-page.php:22 template-parts/content.php:65
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:31
+#: template-parts/content-wide.php:31 template-parts/content.php:54
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
@@ -180,4 +200,8 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://korobochkin.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Wide without header"
 msgstr ""

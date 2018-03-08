@@ -4,17 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rodionov Theme 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rodionov-theme\n"
-"POT-Creation-Date: 2017-11-06 14:42+0300\n"
+"POT-Creation-Date: 2018-03-09 02:08+0300\n"
+"PO-Revision-Date: 2018-03-09 02:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-11-12 19:44+0300\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.7\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Language: ru\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
@@ -44,31 +44,35 @@ msgstr[2] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:50
+#: functions.php:71
 msgid "Primary"
 msgstr ""
 
-#: functions.php:51
+#: functions.php:72
 msgid "Footer Primary"
 msgstr ""
 
-#: functions.php:52
-msgid "Primary Social"
+#: functions.php:73
+msgid "Header Social"
 msgstr ""
 
-#: functions.php:53
-msgid "Footer Primary Social"
+#: functions.php:74
+msgid "Footer Social"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:75
 msgid "Footer Under Title"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:76
+msgid "Header Additional"
+msgstr ""
+
+#: functions.php:134
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:136
 msgid "Add widgets here."
 msgstr ""
 
@@ -76,7 +80,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:49
+#: header.php:55
 msgid "Primary Menu"
 msgstr ""
 
@@ -127,18 +131,33 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Редактировать <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/template-tags.php:158
-msgid "Edit"
-msgstr "Редактировать"
-
 #. translators: %s: search query.
 #: search.php:21
 msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Поиск&hellip;"
+
+#: searchform.php:18
+msgctxt "submit button"
+msgid "Search"
+msgstr "Найти"
+
+#: source/Admin/Services/CustomizerSetup.php:24
+msgid "About in Footer"
 msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Ничего не найдено"
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:25
@@ -157,13 +176,14 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Похоже мы не смогли найти то, что вы искали. Возможно, поиск может помочь."
 
-#: template-parts/content-page.php:22 template-parts/content.php:42
+#: template-parts/content-page.php:22 template-parts/content.php:65
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:31
+#: template-parts/content-wide.php:31 template-parts/content.php:54
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
@@ -186,3 +206,14 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://korobochkin.com"
 msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Wide without header"
+msgstr ""
+
+#~ msgctxt "button label"
+#~ msgid "Search"
+#~ msgstr "Найти"
+
+#~ msgid "Edit"
+#~ msgstr "Редактировать"

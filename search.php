@@ -35,7 +35,7 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+            ?><div class="my-4 my-lg-5"><?php the_posts_navigation(); ?></div><?php
 
 		else :
 
