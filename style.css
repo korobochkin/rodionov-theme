@@ -6372,6 +6372,8 @@ a.text-dark:focus, a.text-dark:hover {
 
 .page-header {
   margin: 50px 0 100px 0; }
+  .no-results .page-header {
+    margin-bottom: 50px; }
 
 body.blog .post, body.post-template-default .post, body.archive .post, body.page .post,
 body.blog .page, body.post-template-default .page, body.archive .page, body.page .page {
