@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Kolya Korobochkin",
-            "email": "me@korobochkin.com"
+            "email": "korobochkin@users.noreply.github.com",
+            "homepage": "https://github.com/korobochkin"
         }
     ],
     "minimum-stability": "stable",
